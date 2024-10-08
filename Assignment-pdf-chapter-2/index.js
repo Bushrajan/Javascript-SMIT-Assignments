@@ -1,33 +1,24 @@
-// __________________________1st___________________________________________
-// alert("Error! Please enter a valid password.")
-
-// alert(`Welcome to JS land...
-// Happy Coding!`)
-
-// alert("Welcome to JS land...")
-
-
-// alert(`Happy Coding!
-// Prevent this page from creating additional dialogues `)
-
-// alert("Hello... I can run JS through my web browser's console")
-
 // __________________________2nd_____________________________________________
 
 // var username;
+
 // var myname = "Bushra Jan";
+
 
 // var message;
 //     message = "Hello World"
 // alert(message);
 
+
 // var student_name = " Jhone Doe";
 // var student_age = " 15 Years old";
 // var student_work = " Certified Mobile Application Development";
 
+
 // alert(student_name);
 // alert(student_age );
 // alert(student_work);
+
 
 
 // var dish = `PIZZZA
@@ -35,16 +26,19 @@
 // PIZ
 // PI
 // P`
-
 // alert(dish);
+
 
 // var  email = "example@example.com" 
 // alert("My email address is ", email);
 
+
 // var  book = "A smarter way to learn JavaScript”" 
 // alert("I am trying to learn from the Book", book);
 
+
 // document.write("Yah! I can write HTML content through JavaScript");
+
 
 // var  design = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
 // alert(design);

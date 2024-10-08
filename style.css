@@ -8,13 +8,7 @@
 body {
     width: 100% !important;
     min-height: 100vh !important;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url(https://habrastorage.org/getpro/habr/upload_files/88f/f62/19f/88ff6219fa2661ad4344f09f7b11a0ee.png) !important; */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.606)), url(https://wallpapers.com/images/hd/java-script-logoon-dark-background-aw286n669vxuej30.jpg) !important; */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url() !important;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url() !important;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url() !important;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url() !important; */
-     background-image: linear-gradient(rgba(0, 0, 0, 0.587),rgba(0, 0, 0, 0.521)), url(https://miro.medium.com/v2/resize:fit:1358/1*uKbcXDBxEmv3FybfNXkf4Q.png) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.587), rgba(0, 0, 0, 0.521)), url(https://miro.medium.com/v2/resize:fit:1358/1*uKbcXDBxEmv3FybfNXkf4Q.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;

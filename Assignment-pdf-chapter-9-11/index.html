@@ -4,45 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js Pdf 01</title>
+    <title>Js Pdf 9-11</title>
     <link rel="shortcut icon"
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" />
+
+    <!-- Bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap">
+
+
+    <!-- lordicons link -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- font awosem link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- animation link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>
-            <center> JavaScript Practice Sheet # Chapter1</center>
-        </h1>
-        <!-- <h2 class="mt-5">Task 1: Identify which of the following variable names are legal and
-            which are illegal:
-        </h2>
-        <p>
-            a) myVariable <br>
-            b) 123variable <br>
-            c) _special <br>
-            d) first name <br>
-            e) 7eleven <br>
-            f) $price <br>
-            g) your-variable <br>
-        </p>
-        <p>
-            Ans:
-            <br>
-            <br> b) 123variable
-            <br> d) first name
-            <br> e) 7eleven
-            <br> g) your-variable
-        </p> -->
+
+    <div class="container-xxl mx-auto  first">
+        <h1 class="mx-auto mt-5 fw-bold">JavaScript Practice Sheet # Chapter 09-11</h1>
+
+        <div class="d-flex flex-column  flex-lg-row flex-md-row ">
+
+            <div class="mt-3  p-2">
+                <br><br> <b>
+                    <br><br><br> 1. Write a program to take “city” name as input from user.
+                    <br>If user enters “Karachi”, welcome the user like this:
+                    <br>“Welcome to city of lights”
+
+                    <br><br><br> 2. Write a program to take “gender” as input from user. If the
+                    <br>user is male, give the message: Good Morning Sir. If the
+                    <br>user is female, give the message: Good Morning Ma'am.
+
+                    <br><br><br>3. Write a program to take input color of road traffic signal
+                    <br>from the user & show the message according to this table:
+
+                    <br><br><br>4. Write a program to take input remaining fuel in car (in
+                    <br> litres) from user. If the current fuel is less than 0.25litres, <br>
+                    show the message “Please refill the fuel in your car”
+
+                    <br><br><br>5. Run this script, & check whether alert message would be
+                    <br>displayed or not. Record the outputs.
+                    <br>a. var a = 4;
+                    <br>if (++a === 5){
+                    <br>alert("given condition for variable a is true");
+                    <br> }
+
+                    <br><br>b. var b = 82;
+                    <br>if (b++ === 83){
+                    <br>alert("given condition for variable b is true");
+                    <br>}
+                    <br><br>c. var c = 12;
+                    <br>if (c++ === 13){
+                    <br>alert("condition 1 is true");
+                    <br>}
+                    <br>if (c === 13){
+                    <br>alert("condition 2 is true");
+                    <br>}
+                    <br>if (++c < 14){ <br>alert("condition 3 is true");
+                        <br>}
+                        <br>if(c === 14){
+                        <br>alert("condition 4 is true");
+                        <br>}
+                        <br><br>d. var materialCost = 20000;
+                        <br>var laborCost = 2000;
+                        <br>var totalCost = materialCost + laborCost;
+                        <br>if (totalCost === laborCost + materialCost){
+                        <br>alert("The cost equals");
+                        <br>}
+                        <br><br>e. if (true){
+                        <br>alert("True");
+                        <br>}
+                        <br>if (false){
+                        <br>alert("False");
+                        <br>}
+
+                        <br><br>f. if("car" < "cat" ){ <br> alert("car is smaller than cat");
+                            <br>}
+
+                            <br><br><br>6. Write a program to take input the
+                            marks obtained in three subjects & total marks. <br> Compute & show the resulting percentage
+                            on
+                            your page. Take percentage & <br> compute grade as per following table:
+                            <br><br>Show the total marks, marks obtained, percentage, grade &
+                            remarks like:
+
+                            <br><br>
+                            <h4>Marks Sheet</h4>
+                            Total marks: 300
+                            <br>Marks obtained: 219
+                            <br>Percentage: 73%
+                            <br>Grade: B
+                            <br>Remarks: You need to improve
 
 
-        <!-- ---------------------------------------------------------- -->
+                            <br><br>7. Guess game:
+                            <br>Store a secret number (ranging from 1 to 10) in a variable.
+                            <br>Prompt user to guess the secret number.
+                            <br>a. If user guesses the same number, show “Bingo! Correct
+                            <br>answer”.
+                            <br>b. If the guessed number +1 is the secret number, show
+                            <br>“Close enough to the correct answer”.
+
+
+                            <br><br><br>8. Write a program to check whether the given number is
+                            <br>divisible by 3. Show the message to the user if the number
+                            <br>is divisible by 3.
+
+
+                            <br><br><br>9. Write a program that checks whether the given input is an
+                            <br>even number or an odd number.
+
+
+                            <br><br><br>10. Write a program that takes temperature as input and
+                            <br>shows a message based on following criteria
+                            <br>a. T > 40 then “It is too hot outside.”
+                            <br>b. T > 30 then “The Weather today is Normal.”
+                            <br>c. T > 20 then “Today's Weather is cool.”
+                            <br>d. T > 10 then “OMG! Today's weather is so Cool.”
+
+
+                            <br><br><br>11. Write a program to create a calculator for +,-,*, / & %
+                            <br>using if statements. Take the following input:
+                            <br>a. First number
+                            <br>b. Second number
+                            <br>c. Operation (+, -, *, /, %)
+                            <br>Compute & show the calculated result to user.
+
+                </b><br>
+                <br>
+            </div>
+
+
+
+        </div>
+
     </div>
 
+    <br><br>
+
+    <hr>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+    <h5 class="mx-auto text-center p-0 fw-bold">Created By: Ma'am Ruhama Gull <br> Solved By: Student Bushra Jan
+    </h5>
     <script src="./index.js"></script>
-    <center>
-        <h4>Created By : Ma'am Ruhama Gull <br> Solved By : Student Bushra Jan </h4>
-    </center>
+
 </body>
 
 </html>
