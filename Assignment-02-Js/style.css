@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100% !important;
+   min-height: 100vh !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.51)), url(./back2.webp) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    color: white !important;
+}
