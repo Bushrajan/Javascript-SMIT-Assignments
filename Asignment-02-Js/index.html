@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Pdf</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" />
+
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap">
+
+
+    <!-- lordicons link -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- font awosem link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- animation link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container-xxl mx-auto  first">
+        <h1 class="mx-auto mt-5 text-center fw-bold">JavaScript Practice Sheet # Chapter 21-25</h1>
+
+
+        <p class="mt-3">
+            <br>
+            <br><br> 1. Write a program that takes two user inputs for first and
+            <br> last name using prompt and merge them in a new variable
+            <br> titled fullName. Greet the user using his full name.
+            <br>
+            <br><br> 2. Write a program to take a user input about his favorite
+            <br> mobile phone model. Find and display the length of user
+            <br> input in your browser
+            <br>
+            <br><br> 3. Write a program to find the index of letter “n” in the word
+            <br> “Pakistani” and display the result in your browser .
+            <br>
+            <br><br> 4. Write a program to find the last index of letter “l” in the
+            <br> word “Hello World” and display the result in your browser.
+            <br>
+            <br>
+            <br>
+            <br><br> 5. Write a program to find the character at 3rd index in the
+            <br> word “Pakistani” and display the result in your browser.
+            <br>
+            <br><br> 6. Repeat Q1 using string concat() method.
+            <br>
+            <br>
+            <br><br> 7. Write a program to replace the “Hyder” to “Islam” in the
+            <br> word “Hyderabad” and display the result in your browser.
+            <br>
+            <br><br> 8. Write a program to replace all occurrences of “and” in the
+            <br> string with “&” and display the result in your browser.
+            <br> var message = “Ali and Sami are best friends. They play cricket and
+            <br> football together.”;
+            <br>
+            <br><br> 9. Write a program that converts a string “472” to a number
+            <br> 472. Display the values & types in your browser.
+            <br>
+            <script>
+                var convertstring = "472"
+                var convertnumber = parseInt("472")
+
+                document.write("<br> Value : " + convertstring)
+                document.write("<br> Type : " + typeof convertstring)
+                document.write("<br><br> Value : " + convertnumber)
+                document.write("<br> Type : " + typeof convertnumber)
+            </script>
+            <br>
+            <br><br> 10. Write a program that takes user input. Convert and
+            <br> show the input in capital letters.
+            <br><br> 11. Write a program that takes user input. Convert and
+            <br> show the input in title case.
+            <br><br> 12. Write a program that converts the variable num to
+            <br> string.
+            <br> var num = 35.36 ;
+            <br> Remove the dot to display “3536” display in your browser.
+            <br>
+            <br>
+            <br><br> 13. Write a program to take user input and store username
+            <br> in a variable. If the username contains any special symbol
+            <br> among [@ . , !], prompt the user to enter a valid username.
+            <br> For character codes of [@ .
+            <br> Note:
+            <br> ASCII code of ! is 33
+            <br> ASCII code of , is 44
+            <br> ASCII code of . is 46
+            <br> ASCII code of @ is 64
+            <br> 14. You have an array
+            <br> A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+            <br> Write a program to enable “search by user input” in an
+            <br> array. After searching, prompt the user whether the given
+            <br> item is found in the list or not.
+            <br> Note: Perform case insensitive search. Whether the user
+            <br> enters cookie, Cookie, COOKIE or coOkIE, program
+            <br> should inform about its availability. Example:
+            <br>
+            <br>
+            <br><br> 15. Write a program to take password as an input from
+            <br> user. The password must qualify these requirements:
+            <br> a. It should contain alphabets and numbers
+            <br> b. It should not start with a number
+            <br> c. It must at least 6 characters long
+            <br> If the password does not meet above requirements,
+            <br> prompt the user to enter a valid password.
+            <br> For character codes of a-z, A-Z & 0-9, refer to ASCII
+            <br> table at the end of this document.
+            <br>
+            <br><br> 16. Write a program to convert the following string to an
+            <br> array using string split method.
+            <br> var university = “University of Karachi”;
+            <br> Display the elements of array in your browser.
+            <br>
+            <br>
+            <br><br> 17. Write a program to display the last character of a user
+            <br> input.
+            <br>
+            <br><br> 18. You have a string “The quick brown fox jumps over the
+            <br> lazy dog”. Write a program to count number of
+            <br> occurrences of word “the” in given string.
+            <br> <!-- ---------------------------------------------------------- -->
+
+
+            <br><br>
+            <hr>
+            <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+        <h1 class="mx-auto mt-5 text-center fw-bold">JavaScript Practice Sheet # Chapter 26-30</h1>
+
+        <p class="mt-3">
+            <br>
+            <br>1. Write a program that takes a positive integer from user &
+            <br>display the following in your browser.
+            <br>a. number
+            <br>b. round off value of the number
+            <br>c. floor value of the number
+            <br>d. ceil value of the number
+
+            <br><br>2. Write a program that takes a negative floating point
+            <br>number from user & display the following in your browser.
+            <br>a. number
+            <br>b. round off value of the number
+            <br>c. floor value of the number
+            <br>d. ceil value of the number
+
+            <br>
+            <br>3. Write a program that displays the absolute value of a
+            <br>number.
+            <br>E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+            <br><br>4. Write a program that simulates a dice using random()
+            <br>method of JS Math class. Display the value of dice in your
+            <br>browser.:
+
+            <br><br>5. Write a program that simulates a coin toss using random()
+            <br>method of JS Math class. Display the value of coin in your
+            <br>browser.
+
+            <br>
+            <br>6. Write a program that shows a random number between 1
+            <br>and 100 in your browser.
+
+            <br><br>7. Write a program that asks the user about his weight. Parse
+            <br>the user input and display his weight in your browser.
+            <br>Possible user inputs can be:
+            <br>a. 50
+            <br>b. 50kgs
+            <br>c. 50.2kgs
+            <br>d. 50.2kilograms
+
+            <br><br>8. Write a program that stores a random secret number from
+            <br>1 to 10 in a variable. Ask the user to input a number
+            <br>between 1 and 10. If the user input equals the secret
+            <br>number, congratulate the user.
+            <br>
+
+        </p>
+        <!-- ---------------------------------------------------------- -->
+
+
+        <br><br>
+        <hr>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+        <h1 class="mx-auto mt-5 fw-bold">JavaScript Practice Sheet # Chapter 31-34</h1>
+
+
+
+        <div class="mt-3  p-2">
+
+            <br><br>1. Write a program that displays current date and time in
+            <br>your browser.
+
+            <br><br>2. Write a program that alerts the current month in words.
+            <br>For example December.
+
+            <br><br>3. Write a program that alerts the first 3 letters of the current
+            <br>day, for example if today is Sunday then alert will show
+            <br>Sun.
+
+            <br><br>4. Write a program that displays a message “It’s Fun day” if
+            <br>its Saturday or Sunday today.
+
+            <br><br>5. Write a program that shows the message “First fifteen
+            <br>days of the month” if the date is less than 16th of the month
+            <br>else shows “Last days of the month”.
+
+            <br><br>6. Write a program that determines the minutes since
+            <br>midnight, Jan. 1, 1970 and assigns it to a variable that
+            <br>hasn't been declared beforehand. Use any variable you like
+            <br>to represent the Date object.
+
+            <br><br>7. Write a program that tests whether it's before noon and
+            <br>alert “Its AM” else “its PM”.
+
+            <br><br>8. Write a program that creates a Date object for the last day
+            <br>of the last month of 2020 and assigns it to variable named
+            <br>laterDate.
+
+            <br><br>9. Create a date object of the starting date of this Ramadan
+            <br>and alert the number of days past since 1st Ramadan?
+            <br>Note: 1st Ramadan was on June 18, 2015
+
+            <br><br>10. Write a program that displays in your browser the
+            <br>seconds that elapsed between the reference date and the
+            <br>beginning of 2015.
+
+            <br><br>11. Create a Date object for the current date and time.
+            <br>Extract the hours, reset the date object an hour ahead and
+            <br>finally display the date object in your browser.
+
+            <br><br>12. Write a program that creates a date object and show the
+            <br>date in an alert box that is reset to 100 years back?
+
+            <br><br>13. Write a program to ask the user about his age. Calculate
+            <br>and show his birth year in your browser.
+
+            <br><br>14. Write a program to generate your K-Electric bill in your
+            <br>browser. All the amounts should be rounded off to 2
+            <br>decimal places. Display the following fields:
+            <br>a. Customer Name
+            <br>b. Current Month
+            <br>c. Number of units
+            <br>d. Charges per unit
+            <br>e. Net Amount Payable (within Due Date)
+            <br>f. Late Payment Surcharge
+            <br>g. Gross Amount Payable (after Due Date)
+            <br>Where,
+            <br>Net Amount Payable (within Due Date) = Number of units * Charges per unit
+            <br>& Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
+        </div>
+
+
+        <br><br>
+        <hr>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+
+        <h1 class="mx-auto mt-5 fw-bold">JavaScript Practice Sheet # Chapter 35-38</h1>
+
+        <div class="mt-3  p-2">
+
+            <br><br>1. Write a function that displays current date & time in your
+            <br>browser.
+
+            <br>2. Write a function that takes first & last name and then it
+            <br>greets the user using his full name.
+
+            <br><br>3. Write a function that adds two numbers (input by user)
+            <br>and returns the sum of two numbers.
+
+            <br>
+            <br>4. Calculator:
+            <br>Write a function that takes three arguments num1, num2
+            <br>& operator & compute the desired operation. Return and
+            <br>show the desired result in your browser.
+
+            <br>
+            <br>5. Write a function that squares its argument.
+
+            <br>
+            <br>6. Write a function that computes factorial of a number.
+
+            <br>
+            <br>7. Write a function that take start and end number as inputs
+            <br>& display counting in your browser.
+
+            <br>
+            <br>8. Write a nested function that computes hypotenuse of a
+            <br>right angle triangle.
+            <br>Hypotenuse2 = Base2 + Perpendicular2
+            <br>Take base and perpendicular as inputs.
+            <br>Outer function : calculateHypotenuse()
+            <br>Inner function: calculateSquare()
+
+            <br>
+            <br>9. Write a function that calculates the area of a rectangle.
+            <br>A = width * height
+            <br>Pass width and height in following manner:
+            <br>i. Arguments as value
+            <br>ii. Arguments as variables
+
+            <br>
+            <br>10. Write a JavaScript function that checks whether a passed
+            <br>string is palindrome or not?
+            <br>A palindrome is word, phrase, or sequence that reads the same backward as
+            <br>forward, e.g., madam.
+
+            <br>
+            <br>11. Write a JavaScript function that accepts a string as a
+            <br>parameter and converts the first letter of each word of the
+            <br>string in upper case.
+            <br>EXAMPLE STRING : 'the quick brown fox'
+            <br>EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+            <br>
+            <br>12. Write a JavaScript function that accepts a string as a
+            <br>parameter and find the longest word within the string.
+            <br>EXAMPLE STRING : 'Web Development Tutorial'
+            <br>EXPECTED OUTPUT : 'Development'
+
+
+            <br><br>13. Write a JavaScript function that accepts two arguments, a
+            <br>string and a letter and the function will count the number of
+            <br>
+            <br>
+            <br>occurrences of the specified letter within the string.
+            <br>Sample arguments : 'JSResourceS.com', 'o'
+
+
+            <br><br>14. The Geometrizer
+            <br>Create 2 functions that calculate properties of a circle, using
+            <br>the definitions here.
+            <br>Create a function called calcCircumference:
+            <br>• Pass the radius to the function.
+            <br>• Calculate the circumference based on the radius, and output
+            <br>"The circumference is NN".
+            <br>Create a function called calcArea:
+            <br>• Pass the radius to the function.
+            <br>• Calculate the area based on the radius, and output "The area
+            <br>is NN".
+            <br>Circumference of circle = 2πr
+            <br>Area of circle = πr2
+
+
+
+
+        </div>
+
+        <br><br>
+        <hr>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+        <h1 class="mx-auto mt-5 fw-bold">JavaScript Practice Sheet # Chapter 35-38</h1>
+
+        <div class="mt-3  p-2">
+
+
+            <br><br>1. Write a function that displays current date & time in your
+            <br>browser.
+
+            <br><br>2. Write a function that takes first & last name and then it
+            <br>greets the user using his full name.
+
+            <br><br>3. Write a function that adds two numbers (input by user)
+            <br>and returns the sum of two numbers.
+
+            <br><br>4. Calculator:
+            <br>Write a function that takes three arguments num1, num2
+            <br>& operator & compute the desired operation. Return and
+            <br>show the desired result in your browser.
+
+            <br><br>5. Write a function that squares its argument.
+
+            <br><br>6. Write a function that computes factorial of a number.
+
+            <br><br>7. Write a function that take start and end number as inputs
+            <br>& display counting in your browser.
+
+            <br><br>8. Write a nested function that computes hypotenuse of a
+            <br>right angle triangle.
+            <br>Hypotenuse2 = Base2 + Perpendicular2
+            <br>Take base and perpendicular as inputs.
+            <br>Outer function : calculateHypotenuse()
+            <br>Inner function: calculateSquare()
+
+            <br><br>9. Write a function that calculates the area of a rectangle.
+            <br> A = width * height
+            <br> Pass width and height in following manner:
+            <br>i. Arguments as value
+            <br>ii. Arguments as variables
+
+            <br><br>10. Write a JavaScript function that checks whether a passed
+            <br>string is palindrome or not?
+            <br>A palindrome is word, phrase, or sequence that reads the same backward as
+            <br>forward, e.g., madam.
+
+            <br><br>11. Write a JavaScript function that accepts a string as a
+            <br>parameter and converts the first letter of each word of the
+            <br>string in upper case.
+            <br>EXAMPLE STRING : 'the quick brown fox'
+            <br>EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+            <br><br>12. Write a JavaScript function that accepts a string as a
+            <br>parameter and find the longest word within the string.
+            <br>EXAMPLE STRING : 'Web Development Tutorial'
+            <br>EXPECTED OUTPUT : 'Development'
+
+            <br><br>13. Write a JavaScript function that accepts two arguments, a
+            <br>string and a letter and the function will count the number of
+
+            <br>occurrences of the specified letter within the string.
+            <br>Sample arguments : 'JSResourceS.com', 'o'
+
+            <br><br>14. The Geometrizer
+            <br>Create 2 functions that calculate properties of a circle, using
+            <br>the definitions here.
+            <br>Create a function called calcCircumference:
+            <br>• Pass the radius to the function.
+            <br>• Calculate the circumference based on the radius, and output
+            <br>"The circumference is NN".
+            <br>Create a function called calcArea:
+            <br>• Pass the radius to the function.
+            <br>• Calculate the area based on the radius, and output "The area
+            <br>is NN".
+            <br>Circumference of circle = 2πr
+            <br>Area of circle = πr2
+        </div>
+
+        <hr>
+
+        <h1 class="mx-auto mt-5 text-center fw-bold">JavaScript Practice Sheet # Chapter 43-48</h1>
+
+        <div class=" mt-3  p-2">
+
+            <br><br>1. Show an alert box on click on a link.
+
+            <br><br>2. Display some Mobile images in browser. On click on an
+            <br>image Show the message in alert to user.
+
+            <br><br>3. Display 10 student records in table and each row should contain a delete
+            <br>button. If you click on a button to delete a record, entire row should be
+            <br>deleted.
+            <br>Before delete
+            <br>After click on delete button on “Mark ” row
+
+            <br><br>4. Display an image in browser. Change the picture on mouseover and set the
+            <br>first picture on mouseout.
+
+            <br><br>5. Show a counter in browser. Counter should increase on click on increase
+            <br>button and decrease on click on decrease button. And show updated counter
+            <br>value in browser.
+
+
+        </div>
+
+
+
+        <br><br>
+        <hr>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+
+        <h1 class="mx-auto mt-5 fw-bold">JavaScript Practice Sheet # Chapter 49-52</h1>
+
+        <div class="mt-3  p-2">
+
+            <br><br>1. Create a signup form and display form data in your web
+            <br>page on submission.
+
+            <br><br>2. Suppose in your webpage there is content area in which
+            <br>you have entered your item details, but user can only see
+            <br>some details on first look. When user clicks on “Read
+            <br>more” button, full detail of that particular item will be
+            <br>displayed.
+
+            <br><br>3. In previous assignment you have created a tabular data
+            <br>using javascript. Let's modify that. Create a form which
+            <br>takes student's details and show each student detail in
+            <br>table. Each row of table must contain a delete button and
+            <br>an edit button. On click on delete button entire row should
+            <br>be deleted. On click on edit button, a hidden form will
+            <br>appear with the values of that row.
+
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="text-center mb-5">
+        <button class="mx-auto btn btn-success justify-content-center align-item-center text-center  p-2 rounded-2"><a
+                href="./script.html" target="_blank" class="text-decoration-none text-light">Click
+                me if you want to see code..</a></button>
+
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+    <hr>
+    <h5 class="mx-auto text-center p-0 fw-bold">Created By: Ma'am Ruhama Gull <br> Solved By: Student Bushra Jan
+    </h5>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
