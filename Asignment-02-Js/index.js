@@ -572,23 +572,22 @@ Note: 1st Ramadan was on June 18, 2015 */
 // console.log ("Number of days past since October 28, 2024: " + daysDifference);
 
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 10. Write a program that displays in your browser the
 seconds that elapsed between the reference date and the
 beginning of 2024.*/
 
-var date = new Date("October 20,2024"); //today-date
-var datestartof2024 = new Date("January 1, 2024");
+// var date = new Date("October 20,2024"); //today-date
+// var datestartof2024 = new Date("January 1, 2024");
 
-var dateinmilisecds = date.getTime(); //1970 sy abhi tk ky miliseconds
-var startDate_of2024Milisec = datestartof2024.getTime();
+// var dateinmilisecds = date.getTime(); //1970 sy abhi tk ky miliseconds
+// var startDate_of2024Milisec = datestartof2024.getTime();
 
-console.log(dateinmilisecds); // aaj ka bara hy
-console.log(startDate_of2024Milisec);
+// console.log("Today time: " + dateinmilisecds); // aaj ka bara hy
+// console.log("Past time: " + startDate_of2024Milisec);
 
-var timeDifference = dateinmilisecds - startDate_of2024Milisec(1000 * 60 * 60)
-console.log(timeDifference);
-
+// var timeDifference = dateinmilisecds - startDate_of2024Milisec / (1000 * 60 ) //only-minutes
+// console.log("Time Difference: " + timeDifference);
 
 
 
@@ -597,15 +596,35 @@ console.log(timeDifference);
 Extract the hours, reset the date object an hour ahead and
 finally display the date object in your browser. */
 
+// var today_date = new Date();
+
+// var hours = today_date.getHours()
+// console.log("Current Hour: " + hours);
+
+// today_date.setHours(hours + 1) // 12 ka time ht 1hr add kis 1ho rha hy
+// console.log("Current date: " + today_date);
+
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 12. Write a program that creates a date object and show the
 date in an alert box that is reset to 100 years back? */
 
+// var date = new Date();
+
+// date.setFullYear(date.getFullYear() - 100); //100 years back (- operation)
+
+// alert("The date of 100 years back then was: " + date);
+
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 13. Write a program to ask the user about his age. Calculate
 and show his birth year in your browser. */
+
+// var userage = +prompt("Enter your age: ")
+// var currentDate_year = new Date().getFullYear()  //formula=> curentdate().fullyear()
+
+// var agediffer = currentDate_year - userage;
+// console.log("Surprice I findout your Birthyear which is: " + agediffer);
 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -622,6 +641,35 @@ g. Gross Amount Payable (after Due Date)
 Where,
 Net Amount Payable (within Due Date) = Number of units * Charges per unit
 & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge */
+
+let CustomerName = "Mona";
+var date = new Date();
+var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var currentmonth = date.getMonth();
+var month = montharray[currentmonth];
+
+var no_of_units = 100;
+var charges_per_unit = 10;
+var late_charges = 50;
+
+var netpay = (no_of_units * charges_per_unit).toFixed(2);
+var grosspay = (parseFloat(netpay) + late_charges).toFixed(2);
+
+            // alert("Customer Name: " + CustomerName + "\n" +
+            // "Current Month: " + month + "\n" +
+            // "Number of Units: " + no_of_units + "\n" +
+            // "Charges per Unit: " + charges_per_unit + "\n" +
+            // "Net Amount Payable (within Due Date): " + netpay + " Rs/-" + "\n" +
+            // "Late Payment Surcharge: " + late_charges + " Rs/-"+ "\n" +
+            // "Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
+
+console.log("Customer Name: " + CustomerName);
+console.log("Current Month: " + month);
+console.log("Number of Units: " + no_of_units);
+console.log("Charges per Unit: " + charges_per_unit);
+console.log("Net Amount Payable (within Due Date): " + netpay + " Rs/-");
+console.log("Late Payment Surcharge: " + late_charges + " Rs/-");
+console.log("Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
 
 
 

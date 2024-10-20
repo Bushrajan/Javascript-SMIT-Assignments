@@ -519,7 +519,239 @@
                                                             <br> // console.log("❌ 👎 😥 💔 You Lose Lose Lose .... ❌ 👎
                                                             😥 💔");
                                                             <br> // }
-                                                            <br>
+                                                            <br> 
+
+<br> /* __________________________ 31st to 34th ________________________________________
+<br> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 
+<br> 1. Write a program that displays current date and time in
+<br> your browser*/
+<br> 
+<br> // var date = new Date();
+<br> // console.log(date);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 2. Write a program that alerts the current month in words.
+<br> For example December.*/
+<br> 
+<br> // var date = new Date();
+<br> // var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; var currentmonth = date.getMonth();
+<br> // var month = montharray[currentmonth]
+<br> // alert("Current Month : " + month)
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 3. Write a program that alerts the first 3 letters of the current
+<br> day, for example if today is Sunday then alert will show
+<br> Sun.*/
+<br> 
+<br> // var date = new Date();
+<br> // var weekarray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+<br> // var currentday = date.getDay();
+<br> // var currentday = weekarray[currentday]
+<br> // alert("Today is : " + currentday)
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 4. Write a program that displays a message “It’s Fun day” if
+<br> its Saturday or Sunday today.*/
+<br> 
+<br> // var date = new Date();
+<br> // var weekarray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+<br> // var currentday = date.getDay();
+<br> // var currentday = weekarray[currentday]
+<br> 
+<br> // if (currentday === "Sunday") {
+<br> //     alert("It's Fun day")
+<br> // }
+<br> 
+<br> // else if (currentday === "Saturday") {
+<br> //     alert("It's Fun day")
+<br> // }
+<br> 
+<br> // else {
+<br> //     alert("Today is : " + currentday)
+<br> // }
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 5. Write a program that shows the message “First fifteen
+<br> days of the month” if the date is less than 16th of the month
+<br> else shows “Last days of the month”.*/
+<br> 
+<br> 
+<br> // var date = new Date();
+<br> // var currentday = date.getDate();
+<br> 
+<br> // if (currentday < 16) {
+<br> //     console.log("First fifteen days of the month");
+<br> // }
+<br> 
+<br> // else {
+<br> //     console.log("Last days of the month");
+<br> // }
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 6. Write a program that determines the minutes since
+<br> midnight, Jan. 1, 1970 and assigns it to a variable that
+<br> hasn't been declared beforehand. Use any variable you like
+<br> to represent the Date object.*/
+<br> 
+<br> 
+<br> // var date = new Date();
+<br> // console.log("Current Date : " + date);
+<br> 
+<br> // var milisecondssince_1970 = date.getTime()
+<br> // console.log("Elapsed miliseconds since January 1 , 1970 : " + milisecondssince_1970);
+<br> 
+<br> // var minutessince1970 = Math.floor(milisecondssince_1970 / (1000 * 60));
+<br> // console.log("Elapsed minutes since January 1, 1970: " + minutessince1970);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 7. Write a program that tests whether it's before noon and
+<br> alert “Its AM” else “its PM”.*/
+<br> 
+<br> // var date = new Date();
+<br> // var hours = date.getHours();
+<br> 
+<br> // if (hours < 12) {
+<br> //     console.log("It's AM");
+<br> // }
+<br> // else {
+<br> //     console.log("It's PM");
+<br> // }
+<br> 
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 8. Write a program that creates a Date object for the last day
+<br> of the last month of 2020 and assigns it to variable named
+<br> laterDate. */
+<br> 
+<br> // var laterDate = new Date("2020, 11, 31");
+<br> // console.log("Later Date : " + laterDate);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 9. Create a date object of the starting date of this Ramadan
+<br> and alert the number of days past since 1st Ramadan?
+<br> Note: 1st Ramadan was on June 18, 2015 */
+<br> 
+<br> // var currentDate = new Date();
+<br> // var startDate = new Date("2024, 9, 28");
+<br> // var timeDifference = currentDate - startDate;
+<br> 
+<br> // //////////////formula of daydifferences Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+<br> // var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+<br> // console.log ("Number of days past since October 28, 2024: " + daysDifference);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 10. Write a program that displays in your browser the
+<br> seconds that elapsed between the reference date and the
+<br> beginning of 2024.*/
+<br> 
+<br> // var date = new Date("October 20,2024"); //today-date
+<br> // var datestartof2024 = new Date("January 1, 2024");
+<br> 
+<br> // var dateinmilisecds = date.getTime(); //1970 sy abhi tk ky miliseconds
+<br> // var startDate_of2024Milisec = datestartof2024.getTime();
+<br> 
+<br> // console.log("Today time: " + dateinmilisecds); // aaj ka bara hy
+<br> // console.log("Past time: " + startDate_of2024Milisec);
+<br> 
+<br> // var timeDifference = dateinmilisecds - startDate_of2024Milisec / (1000 * 60 ) //only-minutes
+<br> // console.log("Time Difference: " + timeDifference);
+<br> 
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 11. Create a Date object for the current date and time.
+<br> Extract the hours, reset the date object an hour ahead and
+<br> finally display the date object in your browser. */
+<br> 
+<br> // var today_date = new Date();
+<br> 
+<br> // var hours = today_date.getHours()
+<br> // console.log("Current Hour: " + hours);
+<br> 
+<br> // today_date.setHours(hours + 1) // 12 ka time ht 1hr add kis 1ho rha hy
+<br> // console.log("Current date: " + today_date);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 12. Write a program that creates a date object and show the
+<br> date in an alert box that is reset to 100 years back? */
+<br> 
+<br> // var date = new Date();
+<br> 
+<br> // date.setFullYear(date.getFullYear() - 100); //100 years back (- operation)
+<br> 
+<br> // alert("The date of 100 years back then was: " + date);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 13. Write a program to ask the user about his age. Calculate
+<br> and show his birth year in your browser. */
+<br> 
+<br> // var userage = +prompt("Enter your age: ")
+<br> // var currentDate_year = new Date().getFullYear()  //formula=> curentdate().fullyear()
+<br> 
+<br> // var agediffer = currentDate_year - userage;
+<br> // console.log("Surprice I findout your Birthyear which is: " + agediffer);
+<br> 
+<br> 
+<br> /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<br> 14. Write a program to generate your K-Electric bill in your
+<br> browser. All the amounts should be rounded off to 2
+<br> decimal places. Display the following fields:
+<br> a. Customer Name
+<br> b. Current Month
+<br> c. Number of units
+<br> d. Charges per unit
+<br> e. Net Amount Payable (within Due Date)
+<br> f. Late Payment Surcharge
+<br> g. Gross Amount Payable (after Due Date)
+<br> Where,
+<br> Net Amount Payable (within Due Date) = Number of units * Charges per unit
+<br> & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge */
+<br> 
+<br> let CustomerName = "Mona";
+<br> var date = new Date();
+<br> var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+<br> var currentmonth = date.getMonth();
+<br> var month = montharray[currentmonth];
+<br> 
+<br> var no_of_units = 100;
+<br> var charges_per_unit = 10;
+<br> var late_charges = 50;
+<br> 
+<br> var netpay = (no_of_units * charges_per_unit).toFixed(2);
+<br> var grosspay = (parseFloat(netpay) + late_charges).toFixed(2);
+<br> 
+<br>             // alert("Customer Name: " + CustomerName + "\n" +
+<br>             // "Current Month: " + month + "\n" +
+<br>             // "Number of Units: " + no_of_units + "\n" +
+<br>             // "Charges per Unit: " + charges_per_unit + "\n" +
+<br>             // "Net Amount Payable (within Due Date): " + netpay + " Rs/-" + "\n" +
+<br>             // "Late Payment Surcharge: " + late_charges + " Rs/-"+ "\n" +
+<br>             // "Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
+<br> 
+<br> console.log("Customer Name: " + CustomerName);
+<br> console.log("Current Month: " + month);
+<br> console.log("Number of Units: " + no_of_units);
+<br> console.log("Charges per Unit: " + charges_per_unit);
+<br> console.log("Net Amount Payable (within Due Date): " + netpay + " Rs/-");
+<br> console.log("Late Payment Surcharge: " + late_charges + " Rs/-");
+<br> console.log("Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
+<br> 
+
+
+
+
     </div>
 
     <hr>
