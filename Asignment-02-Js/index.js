@@ -660,8 +660,6 @@ Net Amount Payable (within Due Date) = Number of units * Charges per unit
 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-
 /* __________________________ 35th - 38th ________________________________________
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 1. Write a function that displays current date & time in your
@@ -1193,26 +1191,26 @@ keyboard in hundreds, find the total number of currency notes
 of each denomination the cashier will have to give to the
 withdrawer.*/
 
-function calculateNotes(amount) {
-    var hundredsrupeenote = Math.floor(amount / 100);
-    amount = amount % 100;
+// function calculateNotes(amount) {
+//     var hundredsrupeenote = Math.floor(amount / 100);
+//     amount = amount % 100;
 
-    let fiftiesrupeenote = Math.floor(amount / 50);
-    amount = amount % 50;
+//     let fiftiesrupeenote = Math.floor(amount / 50);
+//     amount = amount % 50;
 
-    let tensrupeesnote = Math.floor(amount / 10);
-    amount = amount % 10;
+//     let tensrupeesnote = Math.floor(amount / 10);
+//     amount = amount % 10;
 
-    console.log("You will have the return amount in 100s: " + hundredsrupeenote + " hundred-notes " +
-        ", 50s: " + fiftiesrupeenote + " fifty-notes " + "& 10s: " + tensrupeesnote + " ten-notes ");
+//     console.log("You will have the return amount in 100s: " + hundredsrupeenote + " hundred-notes " +
+//         ", 50s: " + fiftiesrupeenote + " fifty-notes " + "& 10s: " + tensrupeesnote + " ten-notes ");
 
-    console.log("Have a good day...");
+//     console.log("Have a good day...");
 
-}
+// }
 
-// for user
-var amount = parseInt(prompt("Enter the amount in hundreds: "));
-calculateNotes(amount);
+// // for user
+// var amount = parseInt(prompt("Enter the amount in hundreds: "));
+// calculateNotes(amount);
 
 // for console
 // console.log(calculateNotes(470));
@@ -1228,3 +1226,5 @@ calculateNotes(amount);
 //|------  |xx|        ----- |xx|   |x| |xx| ---  |xx|    |xx|  --------
 //|------  |xxxxxxxxx| ----- |xx|     |x|xx| ---  |xx|xxx|xx|  --------
 //_________________________________________________________________________________
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
