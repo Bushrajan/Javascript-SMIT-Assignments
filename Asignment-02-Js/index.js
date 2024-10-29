@@ -3,14 +3,14 @@
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 1)Write a program that takes two user inputs for first and
 last name using prompt and merge them in a new variable
-titled fullName. Greet the user using his full name.
+titled fullName. Greet the user using his full name.*/
 
 // var userinput1 = prompt("Enter your First Name : ");
 // var userinput2 = prompt("Enter your Last  Name : ");
 // var concat = alert("Welcome to our website " + userinput1 + " " + userinput2 + ".")
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 2)Write a program to take a user input about his favorite
 mobile phone model.Find and display the length of user
 input in your browser */
@@ -67,7 +67,6 @@ var message = “Ali and Sami are best friends. They play cricket and
 football together.”; */
 
 // var message = "Ali and Sami are best friends. They play cricket and football together.";
-//don't open       var replaceword = message.replaceAll("and", "&") //ES6 as a practice
 // var replaceword = message.replace(/and/gi , "&")
 // alert(replaceword)
 
@@ -127,10 +126,12 @@ ASCII code of . is 46
 ASCII code of @ is 64 */
 
 // var username = prompt("Enter a username:");
-// var invalid_characters = /[@.,!]/;
 
-// while (invalid_characters.test(username)) {
-//     username = prompt("Invalid username. Please enter a valid username without the charcters@ . , !");
+// if (username === String.fromCharCode(33) ||
+//     username === String.fromCharCode(44) ||
+//     username === String.fromCharCode(46) ||
+//     username === String.fromCharCode(64)) {
+//     console.log("Invalid username. Please enter a valid username without the charcters@ . , !");
 // }
 
 // console.log("Valid username: " + username);
@@ -151,15 +152,14 @@ should inform about its availability. Example:*/
 
 // var found = false;
 // for (var i = 0; i < A.length; i++) {
-//     if (A[i].toLowerCase() === userInput) {
+//     if (A[i] === userInput) {
 //         found = true;
+// alert(userInput + " is found in the list.");
 //         break;
 //     }
 // }
 
 // if (found) {
-//     alert(userInput + " is found in the list.");
-// } else {
 //     alert(userInput + " is not found in the list.");
 // }
 
@@ -290,7 +290,7 @@ occurrences of word “the” in given string.*/
 // var count = 0;
 // for (var i = 0; i < mystr.length; i++) {
 
-//     if (mystr.slice(i, i + 3) === "the" ||  mystr.slice(i, i + 3) === "The" ) {
+//     if (mystr.slice(i, i + 3).toLowerCase() === "the") {
 //         count++
 //     }
 // }
@@ -299,10 +299,6 @@ occurrences of word “the” in given string.*/
 // console.log("There are " + count + " occurence(s) of 'the' ");
 
 //______________________________________________________________________________________
-
-
-
-
 
 /* __________________________ 26st to 30th ________________________________________
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -399,7 +395,7 @@ and 100 in your browser.*/
 the user input and display his weight in your browser.
 Possible user inputs can be:
 a. 50
-b. 50kgsF
+b. 50kgs
 c. 50.2kgs
 d. 50.2kilograms */
 
@@ -434,16 +430,6 @@ number, congratulate the user.*/
 // }
 
 
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//__________________________________________________________________________________
-//|------  |xxxxxxxxx| ----- |xx|       |xx| ---  |xxxxxxxxx|  --------
-//|------  |xx|        ----- |xx|x|     |xx| ---  |xx|    |xx|  --------
-//|------  |xxxxxx|    ----- |xx| |x|   |xx| ---  |xx|    |xx|  --------
-//|------  |xx|        ----- |xx|   |x| |xx| ---  |xx|    |xx|  --------
-//|------  |xxxxxxxxx| ----- |xx|     |x|xx| ---  |xx|xxx|xx|  --------
-//_________________________________________________________________________________
-
-
 /* __________________________ 31st to 34th ________________________________________
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -459,7 +445,8 @@ your browser*/
 For example December.*/
 
 // var date = new Date();
-// var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; var currentmonth = date.getMonth();
+// var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//  var currentmonth = date.getMonth();
 // var month = montharray[currentmonth]
 // alert("Current Month : " + month)
 
@@ -559,15 +546,14 @@ laterDate. */
 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-9. Create a date object of the starting date of this Ramadan
-and alert the number of days past since 1st Ramadan?
-Note: 1st Ramadan was on June 18, 2015 */
+9. Create a date object of the starting date of this Note: Date: sep 9, 2024  with the test date:2024, 9, 28*/
 
 // var currentDate = new Date();
 // var startDate = new Date("2024, 9, 28");
 // var timeDifference = currentDate - startDate;
 
 // //////////////formula of daydifferences Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
 // var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 // console.log ("Number of days past since October 28, 2024: " + daysDifference);
 
@@ -642,40 +628,603 @@ Where,
 Net Amount Payable (within Due Date) = Number of units * Charges per unit
 & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge */
 
-let CustomerName = "Mona";
-var date = new Date();
-var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var currentmonth = date.getMonth();
-var month = montharray[currentmonth];
+// let CustomerName = "Mona";
+// var date = new Date();
+// var montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var currentmonth = date.getMonth();
+// var month = montharray[currentmonth];
 
-var no_of_units = 100;
-var charges_per_unit = 10;
-var late_charges = 50;
+// var no_of_units = 100;
+// var charges_per_unit = 10;
+// var late_charges = 50;
 
-var netpay = (no_of_units * charges_per_unit).toFixed(2);
-var grosspay = (parseFloat(netpay) + late_charges).toFixed(2);
+// var netpay = (no_of_units * charges_per_unit).toFixed(2);
+// var grosspay = (parseFloat(netpay) + late_charges).toFixed(2);
 
-            // alert("Customer Name: " + CustomerName + "\n" +
-            // "Current Month: " + month + "\n" +
-            // "Number of Units: " + no_of_units + "\n" +
-            // "Charges per Unit: " + charges_per_unit + "\n" +
-            // "Net Amount Payable (within Due Date): " + netpay + " Rs/-" + "\n" +
-            // "Late Payment Surcharge: " + late_charges + " Rs/-"+ "\n" +
-            // "Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
+//             // alert("Customer Name: " + CustomerName + "\n" +
+//             // "Current Month: " + month + "\n" +
+//             // "Number of Units: " + no_of_units + "\n" +
+//             // "Charges per Unit: " + charges_per_unit + "\n" +
+//             // "Net Amount Payable (within Due Date): " + netpay + " Rs/-" + "\n" +
+//             // "Late Payment Surcharge: " + late_charges + " Rs/-"+ "\n" +
+//             // "Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
 
-console.log("Customer Name: " + CustomerName);
-console.log("Current Month: " + month);
-console.log("Number of Units: " + no_of_units);
-console.log("Charges per Unit: " + charges_per_unit);
-console.log("Net Amount Payable (within Due Date): " + netpay + " Rs/-");
-console.log("Late Payment Surcharge: " + late_charges + " Rs/-");
-console.log("Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
+// console.log("Customer Name: " + CustomerName);
+// console.log("Current Month: " + month);
+// console.log("Number of Units: " + no_of_units);
+// console.log("Charges per Unit: " + charges_per_unit);
+// console.log("Net Amount Payable (within Due Date): " + netpay + " Rs/-");
+// console.log("Late Payment Surcharge: " + late_charges + " Rs/-");
+// console.log("Gross Amount Payable (after Due Date): " + grosspay + " Rs/-");
 
 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* __________________________ 35th - 38th ________________________________________
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1. Write a function that displays current date & time in your
+browser. */
+// function date() {
+//     var date = new Date();
+//     console.log(date);
+// }
+// date()
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2. Write a function that takes first & last name and then it
+greets the user using his full name. */
+
+// function greets() {
+//     var firstName = prompt("Enter First name: ").toLowerCase();
+//     var lastName = prompt("Enter last  name: ").toLowerCase();
+//     console.log("Hello " + firstName.slice(0, 1).toUpperCase() + firstName.slice(1) + " " + lastName.slice(0, 1).toUpperCase() + lastName.slice(1));
+// }
+// greets()
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3. Write a function that adds two numbers (input by user)
+and returns the sum of two numbers. */
+
+// function sum() {
+//     var num1 = +prompt("Enter First no: ");
+//     var num2 = +prompt("Enter Second  no: ");
+//     var sum = num1 + num2
+//     console.log("Sum : " + sum);
+// }
+// sum()
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+4. Calculator:
+Write a function that takes three arguments num1, num2
+& operator & compute the desired operation. Return and
+show the desired result in your browser. */
+
+// function calc(n1, n2, operator) {
+
+//     switch (operator) {
+//         case "+":
+//             return n1 + n2;
+
+//         case "-":
+//             return n1 - n2;
+
+//         case "*":
+//             return n1 * n2;
+
+//         case "/":
+//             return n1 / n2;
+
+//         case "%":
+//             return n1 % n2;
+
+//         default:
+//             return ("Invalid statement");
+//     }
+// }
+// var result = calc(2, 2, "+");
+// console.log("Sum: " + result); // Output: Sum: 4
+
+// result = calc(2, 2, "-");
+// console.log("Sub: " + result); // Output: Sub: 0
+
+// result = calc(2, 2, "*");
+// console.log("Mul: " + result); // Output: Mul: 4
+
+// result = calc(2, 2, "/");
+// console.log("Div: " + result); // Output: Div: 1
+
+// result = calc(2, 2, "%");
+// console.log("Mod: " + result); // Output: Div: 1
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+5. Write a function that squares its argument. */
+
+// function square(number) {
+//     return number * number;
+// }
+
+// var square_result = square(2, 2);
+// console.log("Square of a num 2 : " + square_result);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+6. Write a function that computes factorial of a number. */
+
+// function factorial(number) {
+//     var fac = 1;
+//     for (var i = 1; i <= number; i++) {
+//         fac *= i;
+//     }
+//     return fac;
+// }
+
+// var fac_result = factorial(5);
+// console.log("Factorial : " + fac_result);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+7. Write a function that take start and end number as inputs
+& display counting in your browser. */
+
+
+// function count() {
+
+//     var start = +prompt("Enter start number of counting: ")
+//     var end = +prompt("Enter end number of counting: ")
+
+//     for (var i = start; i <= end; i++) {
+//         console.log(i);
+
+//     }
+
+// }
+// count();
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+8. Write a nested function that computes hypotenuse of a
+right angle triangle.
+Hypotenuse2 = Base2 + Perpendicular2
+Take base and perpendicular as inputs.
+Outer function : calculateHypotenuse()
+Inner function: calculateSquare() */
+
+// function hypotenuse(base, perp) {
+//     function square(number) {
+//         return number * number;
+//     }
+
+//     var hyposquare = square(base) + square(perp)
+//     var hypo_result = Math.sqrt(hyposquare);
+//     return hypo_result;
+// }
+
+// var rightAngleTriangle = hypotenuse(5,5);
+// console.log("Right Angle Triangle : " + rightAngleTriangle.toFixed(2));
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+9. Write a function that calculates the area of a rectangle.
+ A = width * height
+ Pass width and height in following manner:
+i. Arguments as value
+ii. Arguments as variables */
+
+// function area_rect(width, height) {
+//     return width * height;
+// }
+
+// var area_result = area_rect(5, 5);
+// console.log("The area of a rectangle : " + area_result);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+10. Write a JavaScript function that checks whether a passed
+string is palindrome or not?
+A palindrome is word, phrase, or sequence that reads the same backward as
+forward, e.g., madam. */
+
+// function palindrome() {
+//     var word = prompt("Enter word : ").toLowerCase();
+//     var palindrome = word.split("").reverse().join("")
+
+//     if (word === palindrome) {
+//         console.log("Palindrom >>>>>" + word);
+
+//     }
+//     else {
+//         console.log("Not palindrom >>>> " + word);
+//     }
+// }
+
+// palindrome()
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+11. Write a JavaScript function that accepts a string as a
+parameter and converts the first letter of each word of the
+string in upper case.
+EXAMPLE STRING : 'the quick brown fox'
+EXPECTED OUTPUT : 'The Quick Brown Fox' */
+
+// function converstring(phrase) {
+
+//     var string = phrase.split(" ")
+
+//     for (var i = 0; i < string.length; i++) {
+//         string[i] = string[i].charAt(0).toUpperCase() + string[i].slice(1);
+//     }
+
+//     return string.join(" ");
+// }
+
+// var Example_string = 'the quick brown fox';
+// var result = converstring(Example_string);
+// console.log(result);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+12. Write a JavaScript function that accepts a string as a
+parameter and find the longest word within the string.
+EXAMPLE STRING : 'Web Development Tutorial'
+EXPECTED OUTPUT : 'Development' */
+
+// function findLongestWord(str) {
+
+//     var words = str.split(' ');
+//     var longestWord = '';
+
+//     for (var i = 0; i < words.length; i++) {
+//         if (words[i].length > longestWord.length) {
+//             longestWord = words[i];
+//         }
+//     }
+//     return longestWord;
+// }
+
+// var exampleString = 'Web Development Tutorial';
+// var longestWord = findLongestWord(exampleString);
+// console.log("The longest word is: " + longestWord);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+13. Write a JavaScript function that accepts two arguments, a
+string and a letter and the function will count the number of
+occurrences of the specified letter within the string.
+Sample arguments : 'JSResourceS.com', 'o' */
+
+// function countOccurrences(string, letter) {
+
+//     var count = 0;
+
+//     for (var i = 0; i < string.length; i++) {
+//         if (string[i] === letter) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// var exampleString = 'JSResourceS.com';
+// var letterToCount = 'o';
+// var occurrences = countOccurrences(exampleString, letterToCount);
+// console.log("Number of occurrences of 'JSResourceS.com' in the string: " + occurrences +  " which is " + letterToCount);
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+14. The Geometrizer
+Create 2 functions that calculate properties of a circle, using
+the definitions here.
+
+Create a function called calcCircumference:
+• Pass the radius to the function.
+• Calculate the circumference based on the radius,
+and output "The circumference is NN".
+
+Create a function called calcArea:
+• Pass the radius to the function.
+• Calculate the area based on the radius, and output "The area is NN".
+>> Circumference of circle = 2πr
+>> Area of circle = πr2 */
+
+
+// function calcCircumference(radius) {
+//     var PI = 3.14
+//     return 2 * PI * radius
+// }
+
+// var resultcircumference = calcCircumference(2)
+// console.log("The Circumference of Circle is : " + resultcircumference);
+
+
+// function calcArea(radius) {
+//     var PI = 3.14
+//     return PI * radius * radius
+// }
+
+// var resultarea = calcArea(4)
+// console.log("The Area of Circle is : " + resultarea);
+
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* __________________________ 38th - 44th ________________________________________
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1. Write a custom function power ( a, b ), to calculate the value of
+a raised to b. */
+
+// function power(a, b) {
+//     return a ** b;
+// }
+
+// var resultpower = power(3, 2)
+// console.log("Power of 3 which is 2 = " + resultpower);
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2. Any year is entered through the keyboard. Write a function to
+determine whether the year is a leap year or not.
+Leap years ..., 2012, 2016, 2020 */
+
+/////////// Which are Leap Years?
+/////////// The complete list of leap years in the first half of the 21st century is
+/////////// therefore 2000, 2004, 2008, 2012, 2016, 2020, 2024, 2028, 2032, 2036, 2040, 2044, and 2048.
+/////////// -------------------------------------------------------------------------------------------
+
+// function isLeapYear(year) {
+//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+// var resultyear =  isLeapYear(2005)
+// console.log("Leap year : " + resultyear);
+// var resultyear =  isLeapYear(2006)
+// console.log("Leap year : " + resultyear);
+// var resultyear =  isLeapYear(2004)
+// console.log("Leap year : " + resultyear);
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3. If the lengths of the sides of a triangle are denoted by a, b, and
+c, then area of triangle is given by
+area = S (S − a)(S − b)(S − c)
+where, S = ( a + b + c ) / 2
+Calculate area of triangle using 2 functions */
+
+// function CalcArea(a, b, c) {
+//     function side(a, b, c) {
+//         return (a + b + c) / 2
+//     }
+
+//     var Sides = side(a, b, c)
+//     var AreaTriangle = (Sides * (Sides - a) * (Sides - b) * (Sides - c))
+//     return Math.sqrt(AreaTriangle)
+// }
+
+// console.log(CalcArea(3, 4, 5))
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+4. Write a function that receives marks received by a student in 3
+subjects and returns the average and percentage of these
+marks. there should be 3 functions one is the mainFunction
+and other are for average and percentage. Call those functions
+from mainFunction and display result in mainFunction. */
+
+
+// function average(m1, m2, m3) {
+//     return m1 + m2 + m3 / 3
+// }
+
+// function percentage(m1, m2, m3) {
+//     var obtmarks = m1 + m2 + m3
+//     return (obtmarks / 300) * 100
+// }
+
+// function mainFunction(m1, m2, m3) {
+
+//     var calculateAverage = average(m1, m2, m3)
+//     var calculatePercentage = percentage(m1, m2, m3)
+
+//     console.log("Total Marks: 300 ");
+//     console.log("Obtained Marks: " + obtmarks);
+//     console.log("Average Marks: " + calculateAverage.toFixed(2));
+//     console.log("Percentage: " + calculatePercentage.toFixed(2) + "%");
+// }
+
+// var m1 = 85, m2 = 90, m3 = 56;
+// var obtmarks = m1 + m2 + m3;
+// mainFunction(m1, m2, m3)
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+5. You have learned the function indexOf. Code your own custom
+function that will perform the same functionality. You can code
+for single character as of now. */
+
+// function findindexof(example,letter) {
+
+//     var i = 0;
+//     while (i <= example.length - 1) {
+
+//         if(example[i] === letter){
+//             return i;
+//         }
+//         i++
+//     }
+// }
+// console.log("Indexof r in text 'Hello Bushra' is : ",findindexof('Hello Bushra','r'));
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+6. Write a function to delete all vowels from a sentence. Assume
+that the sentence is not more than 25 characters long. */
+
+// function vowels(myString) {
+//     return myString.replace(/[aeiou]/gi, "")
+// }
+
+// console.log("Hi I am Bushra Jan.");
+// console.log(vowels("Hi I am Bushra Jan."));
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+7. Write a function with switch statement to count the number of
+occurrences of any two vowels in succession in a line of text.
+For example, in the sentence "Pleases read this application and give me gratuity”
+Such occurrences are ea, ea, ui.*/
+
+// function countOccurrences(v) {
+//     var vowels_pairs = []
+//     for (let i = 0; i < v.length - 1; i++) {
+//         var newvowel = v[i] + v[i + 1];
+
+
+//         switch (newvowel) {
+//             case "aa": case "ea": case "ia": case "oa": case "ua":
+//             case "ae": case "ee": case "ie": case "oe": case "ue":
+//             case "ai": case "ei": case "ii": case "oi": case "ui":
+//             case "ao": case "eo": case "io": case "oo": case "uo":
+//             case "au": case "eu": case "iu": case "ou": case "uu":
+//                 vowels_pairs.push(newvowel)
+//                 break;
+
+//             default:
+//                 break;
+//         }
+//     }
+//     return vowels_pairs;
+// }
+// console.log("Lorem ipsum dolor sit amet usandae, rerum? Minimeat.Lorem ipsum dolor sit amet usandae, rerum? Minimeat.");
+// console.log(countOccurrences("Lorem ipsunatur itaque! Recusan modi facere placeat.Lorem ipsum dolor sit amet usandae, rerum? Minimeat."));
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+8. The distance between two cities (in km.) is input through the
+keyboard. Write four functions to convert and print this
+distance in meters, feet, inches and centimeters.*/
+
+// function kmToM() {
+//     var m = 1 * 1000;
+//     return m;
+// }
+
+// function kmToF() {
+//     var f = 1 * 3280.84;
+//     return f;
+// }
+
+// function kmToI() {
+//     var i = 1 * 39370.1;
+//     return i;
+// }
+
+// function kmToCm() {
+//     var cm = 1 * 100000;
+//     return cm;
+// }
+
+
+// function distabcebetweencities() {
+//     var Km = +prompt("Enter the distance in kilometers: ");
+//     Km = parseFloat(Km);
+
+//     if (isNaN(Km) || Km < 0) {
+//         alert("Distance can't be negative...")
+//         return;
+//     }
+
+//     var kilometersToMeters = Km * kmToM();
+//     var kilometersToFeet = Km * kmToF();
+//     var kilometersToInches = Km * kmToI();
+//     var kilometersToCentimeters = Km * kmToM();
+
+//     console.log("The distance in meters: " + kilometersToMeters + " m");
+//     console.log("The distance in feet: " + kilometersToFeet + " ft");
+//     console.log("The distance in inches: " + kilometersToInches + " in");
+//     console.log("The distance in centimeters: " + kilometersToCentimeters + " cm");
+// }
+
+// distabcebetweencities()
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+9. Write a program to calculate overtime pay of employees.
+Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+worked above 40 hours. Assume that employees do not work
+for fractional part of an hour.*/
+
+// function calculate_overtime_pay(hrs_of_work) {
+//     var perHourPayrate = 12.00;
+//     var regularHours = 40;
+//     var overtimeHours = hrs_of_work - regularHours;
+//     var overtimePaystart = 0;
+
+//     if (hrs_of_work > regularHours) {
+//         overtimePaystart = overtimeHours * perHourPayrate;
+//     }
+
+//     return "Your overtime pay is Rs. " + overtimePaystart;
+// }
+
+//     //for user
+// var takeHours = +prompt('Enter total hours of worked (above 40): ');
+// console.log(calculate_overtime_pay(takeHours),"/-");
+
+//     //for console
+// console.log(calculate_overtime_pay(50),"/-");
+// console.log(calculate_overtime_pay(60),"/-");
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+10. A cashier has currency notes of denominations 10, 50 and
+100. If the amount to be withdrawn is input through the
+keyboard in hundreds, find the total number of currency notes
+of each denomination the cashier will have to give to the
+withdrawer.*/
+
+function calculateNotes(amount) {
+    var hundredsrupeenote = Math.floor(amount / 100);
+    amount = amount % 100;
+
+    let fiftiesrupeenote = Math.floor(amount / 50);
+    amount = amount % 50;
+
+    let tensrupeesnote = Math.floor(amount / 10);
+    amount = amount % 10;
+
+    console.log("You will have the return amount in 100s: " + hundredsrupeenote + " hundred-notes " +
+        ", 50s: " + fiftiesrupeenote + " fifty-notes " + "& 10s: " + tensrupeesnote + " ten-notes ");
+
+    console.log("Have a good day...");
+
+}
+
+// for user
+var amount = parseInt(prompt("Enter the amount in hundreds: "));
+calculateNotes(amount);
+
+// for console
+// console.log(calculateNotes(470));
+// console.log(calculateNotes(120));
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//__________________________________________________________________________________
+//|------  |xxxxxxxxx| ----- |xx|       |xx| ---  |xxxxxxxxx|  --------
+//|------  |xx|        ----- |xx|x|     |xx| ---  |xx|    |xx|  --------
+//|------  |xxxxxx|    ----- |xx| |x|   |xx| ---  |xx|    |xx|  --------
+//|------  |xx|        ----- |xx|   |x| |xx| ---  |xx|    |xx|  --------
+//|------  |xxxxxxxxx| ----- |xx|     |x|xx| ---  |xx|xxx|xx|  --------
+//_________________________________________________________________________________
