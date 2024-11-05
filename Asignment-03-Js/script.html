@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Pdf Answers</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" />
+
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap">
+
+
+    <!-- lordicons link -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- font awosem link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- animation link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-xxl p-2 ">
+<br>         <br>
+<br> 
+<br> 
+<br>         
+<br> /* __________________________ 43rd to 48th  ________________________________________
+<br> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+<br> // 1. Show an alert box on click on a link.
+<br> 
+<br> /////////////////// in html
+<br> 
+<br> 
+<br> 
+<br> // 2. Display some Mobile images in browser. On click on an
+<br> //     image Show the message in alert to user.
+<br> 
+<br> //////////////////// in html
+<br> 
+<br> 
+<br> 
+<br> // 3. Display 10 student records in table and each row should contain a delete
+<br> // button. If you click on a button to delete a record, entire row should be deleted.
+<br> // Before delete
+<br> // After click on delete button on “Mark ” row
+<br> 
+<br> 
+<br> 
+<br> function deleteRow1(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow2(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow3(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow4(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> 
+<br> // 4. Display an image in browser. Change the picture on mouseover and set the
+<br> //  first picture on mouseout.
+<br> 
+<br> 
+<br> ///////////////// in html
+<br> 
+<br> 
+<br> //  5. Show a counter in browser. Counter should increase on click on increase
+<br> // button and decrease on click on decrease button. And show updated counter
+<br> // value in browser.
+<br> 
+<br> var counter = 0;
+<br> 
+<br> function updateCounter() {
+<br>     document.getElementById('counter').innerText = counter;
+<br> }
+<br> 
+<br> function increase() {
+<br>     counter++;
+<br>     updateCounter();
+<br> }
+<br> 
+<br> function decrease() {
+<br>     //shoud not below zero
+<br>     if (counter > 0) {
+<br>         counter--;
+<br>         updateCounter();
+<br>     }
+<br> }
+<br> 
+<br> 
+<br> /* __________________________ 43rd to 48th  ________________________________________
+<br> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+<br> 
+<br> 
+<br> // 1. Create a signup form and display form data in your web
+<br> // page on submission.
+<br> 
+<br> const loginForm = document.querySelector("form.login");
+<br> const signupForm = document.querySelector("form.signup");
+<br> const loginBtn = document.querySelector("label.login");
+<br> const signupBtn = document.querySelector("label.signup");
+<br> const signupLink = document.querySelector(".signup-link a");
+<br> const loginText = document.querySelector(".title-text .login");
+<br> const signupText = document.querySelector(".title-text .signup");
+<br> 
+<br> signupBtn.addEventListener("click", () => {
+<br>     loginForm.style.marginLeft = "-50%";
+<br>     loginText.style.marginLeft = "-50%";
+<br> });
+<br> 
+<br> loginBtn.addEventListener("click", () => {
+<br>     loginForm.style.marginLeft = "0%";
+<br>     loginText.style.marginLeft = "0%";
+<br> });
+<br> 
+<br> signupLink.addEventListener("click", () => {
+<br>     signupBtn.click();
+<br>     return false;
+<br> })
+<br> 
+<br> ////////////////////////////////////////////////////////form date function
+<br> function displayFormData(event) {
+<br>     event.preventDefault();
+<br> 
+<br> 
+<br>     var form = event.target;
+<br>     var email = form.email.value;
+<br>     var password = form.password.value;
+<br>     // var confirmPassword = form.confirm_password ? form.confirm_password.value : '';
+<br>     var username = form.username ? form.username.value : 'N/A';
+<br> 
+<br>     document.getElementById('displayUsername').innerHTML = "Username: " + username;
+<br>     document.getElementById('displayEmail').innerHTML = "Email: " + email;
+<br>     document.getElementById('displayPassword').innerHTML = "Password: " + password;
+<br>     // document.getElementById('displayConfirmPassword').innerHTML = "Confirm Password: " + confirmPassword;
+<br> }
+<br> 
+<br> 
+<br> // 2. Suppose in your webpage there is content area in which
+<br> // you have entered your item details, but user can only see
+<br> // some details on first look. When user clicks on “Read
+<br> // more” button, full detail of that particular item will be
+<br> // displayed.
+<br> 
+<br> /////////////////////////////////////////////
+<br> function toggle() {
+<br>     var hidetext = document.getElementById("hidetext");
+<br>     var hidebutton = document.getElementById("button");
+<br> 
+<br>     if (hidetext.style.display === "none" || hidetext.style.display === "") {
+<br>         hidetext.style.display = "block";
+<br>         hidebutton.innerHTML = "Read Less";
+<br>     }
+<br>     else {
+<br>         hidetext.style.display = "none";
+<br>         hidebutton.innerHTML = "Read Full";
+<br>     }
+<br> }
+<br> 
+<br> 
+<br> function toggle2() {
+<br>     var hidetext2 = document.getElementById("hidetext2");
+<br>     var hidebutton2 = document.getElementById("button2");
+<br> 
+<br>     if (hidetext2.style.display === "none" || hidetext2.style.display === "") {
+<br>         hidetext2.style.display = "block";
+<br>         hidebutton2.innerHTML = "Read Less";
+<br>     }
+<br>     else {
+<br>         hidetext2.style.display = "none";
+<br>         hidebutton2.innerHTML = "Read Full";
+<br>     }
+<br> }
+<br> 
+<br> 
+<br> function toggle3() {
+<br>     var hidetext3 = document.getElementById("hidetext3");
+<br>     var hidebutton3 = document.getElementById("button3");
+<br> 
+<br>     if (hidetext3.style.display === "none" || hidetext.style.display === "") {
+<br>         hidetext3.style.display = "block";
+<br>         hidebutton3.innerHTML = "Read Less";
+<br>     }
+<br>     else {
+<br>         hidetext3.style.display = "none";
+<br>         hidebutton3.innerHTML = "Read Full";
+<br>     }
+<br> }
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> // 3. In previous assignment you have created a tabular data
+<br> // using javascript. Let's modify that. Create a form which
+<br> // takes student's details and show each student detail in
+<br> // table. Each row of table must contain a delete button and
+<br> // an edit button. On click on delete button entire row should
+<br> // be deleted. On click on edit button, a hidden form will
+<br> // appear with the values of that row.
+<br> 
+<br> 
+<br> 
+<br> 
+<br> function deleteRow5(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow6(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow7(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function deleteRow8(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> // ------------------------------------------------------------
+<br> var currentEditRow;
+<br> 
+<br> function deleteRow(rowId) {
+<br>     var row = document.getElementById(rowId);
+<br>     row.parentNode.removeChild(row);
+<br> }
+<br> 
+<br> function editRow(rowId) {
+<br>     currentEditRow = document.getElementById(rowId);
+<br>     document.getElementById('editNameInput').value = currentEditRow.querySelector('#editName').innerText;
+<br>     document.getElementById('editClassInput').value = currentEditRow.querySelector('#editclass').innerText;
+<br>     document.getElementById('editForm').style.display = 'block';
+<br> }
+<br> 
+<br> function updateRow(event) {
+<br>     event.preventDefault();
+<br>     currentEditRow.querySelector('#editName').innerText = document.getElementById('editNameInput').value;
+<br>     currentEditRow.querySelector('#editclass').innerText = document.getElementById('editClassInput').value;
+<br>     hideEditForm();
+<br> }
+<br> 
+<br> function hideEditForm() {
+<br>     document.getElementById('editForm').style.display = 'none';
+<br> }
+<br> 
+<br> 
+<br> 
+<br>         <br>
+        <br>
+        <center>/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ------
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/</center>
+        <center>/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - END -
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/</center>
+        <center>/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ------
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/</center>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <hr>
+    <br><br><br>
+    <div class="text-center mb-5">
+        <button class="mx-auto btn btn-success justify-content-center align-item-center text-center  p-2 rounded-2"><a
+                href="./index.html" target="_blank" class="text-decoration-none fw-bold text-light">Click
+                me if you want to go to home page</a></button>
+
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+    <h5 class="mx-auto text-center p-0 fw-bold">Created By: Ma'am Ruhama Gull <br> Solved By: Student Bushra Jan
+    </h5>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

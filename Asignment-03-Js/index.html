@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Pdf</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" />
+
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap">
+
+
+    <!-- lordicons link -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- font awosem link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- animation link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container-xxl  first">
+        <h1 class="mx-auto mt-5 text-center fw-bold">JavaScript Practice Sheet # Chapter 43-48</h1>
+
+
+        <p class="mt-3">
+            <br>
+
+            <br><br> 1. Show an alert box on click on a link.
+            <a href="https://assets.hermes.com/is/image/hermesproduct/aline-grooming-bag--068487CK37-worn-1-0-0-800-800_g.jpg"
+                onclick="alert('Sale offer just for 5$')" class="text-decoration-none text-success">Link for show </a>
+
+
+            <br><br> 2. Display some Mobile images in browser. On click on an
+            <br> image Show the message in alert to user.
+
+        <div class="text-center d-flex flex-wrap justify-content-center align-item-center m-1 p-1">
+            <div>
+                <img src="https://www.cnet.com/a/img/resize/592e5101f4fee1caf72f9e0169c8784ddf9eb12a/hub/2023/05/04/31dfdcf2-1ac3-4320-b40c-4c356300f06e/google-pixel-7a-phone-14.jpg?auto=webp&fit=crop&height=576&width=768"
+                    alt="phone" class="img-fluid" width="200" height="200"
+                    onclick=" alert('Thanks for purchasing from us')">
+            </div>
+            <div>
+                <img src="https://images.anandtech.com/doci/10194/X-T30_DSF4322.jpg" alt="phone" class="img-fluid"
+                    width="200" height="200" onclick=" alert('Thanks for purchasing from us')">
+            </div>
+            <div>
+                <img src="https://www.oppo.com/content/dam/oppo/en/mkt/newsroom/story/7-reasons-you-should-switch-to-a-flip-phone/main.jpg?"
+                    alt="phone" class="img-fluid" width="200" height="200"
+                    onclick=" alert('Thanks for purchasing from us')">
+            </div>
+            <div>
+                <img src="https://diversity.pk/cdn/shop/files/61nxOMy7GhL._AC_SX569.jpg?v=1713616972&width=569"
+                    alt="phone" class="img-fluid" width="200" height="200"
+                    onclick=" alert('Thanks for purchasing from us')">
+            </div>
+
+        </div>
+
+        <br><br> 3. Display 10 student records in table and each row should contain a delete
+        <br> button. If you click on a button to delete a record, entire row should be
+        <br> deleted.
+        <br> Before delete
+        <br> After click on delete button on “Mark ” row (the row with disapper)
+
+        <div class=" justify-content-center align-item-center mt-5 p-1 bg-secondary rounded-2">
+            <div class="m-lg-3 m-md-3  justify-content-center align-item-center">
+                <div class="row text-warning pt-2 d-flex border rounded-2 p-1 ">
+                    <div class="col mt-1 mx-auto text-center  mb-3">
+                        <b> Index </b>
+                    </div>
+
+                    <div class="col mt-1 mx-auto text-center mb-3">
+                        <b> Names </b>
+                    </div>
+
+                    <div class="col mt-1 mx-auto text-center mb-3">
+                        <b> Class </b>
+                    </div>
+
+                    <div class="col mt-1 mx-auto text-center mb-3">
+                        <b> Buttons </b>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row" id="row1">
+
+                    <div class="col text-center">
+                        <span>0</span>
+                    </div>
+
+                    <div class="col text-center">
+                        <p class=" " id="inputpara1">Jhone</p>
+                    </div>
+
+                    <div class="col text-center">
+                        <span class="classinput1">10</span>
+                    </div>
+
+                    <div class="col text-center">
+                        <button id="inputbutton1" class="btn btn-danger text-light" onclick="deleteRow1('row1')">
+                            Delete</button>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row text-center" id="row2">
+
+                    <div class="col">
+                        <span>1</span>
+                    </div>
+
+                    <div class="col">
+                        <p class=" " id="inputpara2">Doe</p>
+                    </div>
+
+                    <div class="col">
+                        <span class="classinput2">9</span>
+                    </div>
+
+                    <div class="col">
+                        <button id="inputbutton2" class="btn btn-danger text-light" onclick=" deleteRow1('row2')">
+                            Delete</button>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row text-center" id="row3">
+
+                    <div class="col">
+                        <span>2</span>
+                    </div>
+
+                    <div class="col">
+                        <p class="" id="inputpara3">Mark</p>
+                    </div>
+
+                    <div class="col">
+                        <span class="classinput3">10</span>
+                    </div>
+
+                    <div class="col">
+                        <button id="inputbutton3" class="btn btn-danger text-light" onclick="deleteRow1('row3')">
+                            Delete</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center" id="row4">
+
+                    <div class="col">
+                        <span>3</span>
+                    </div>
+
+                    <div class="col">
+                        <p class="" id="inputpara4">James</p>
+                    </div>
+
+                    <div class="col">
+                        <span class="classinput4">8</span>
+                    </div>
+
+                    <div class="col">
+                        <button id="inputbutton4" class="btn btn-danger text-light"
+                            onclick="deleteRow4('row4')">Delete</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <br><br> 4. Display an image in browser. Change the picture on mouseover and set the
+        <br> first picture on mouseout.
+
+        <div class="d-flex mt-5 mb-5 flex-wrap justify-content-center align-item-center text-center p-0 m-0">
+
+            <div>
+                <img id="image" class="img-fluid "
+                    src="https://img.freepik.com/premium-vector/two-boys-holding-hands-one-which-has-other-holding-hands_1016520-34878.jpg?semt=ais_hybrid"
+                    alt="img"
+                    onmouseover="src='https://www.shutterstock.com/image-vector/two-young-boys-fighting-illustration-600nw-547510261.jpg'"
+                    onmouseout="src='https://img.freepik.com/premium-vector/two-boys-holding-hands-one-which-has-other-holding-hands_1016520-34878.jpg?semt=ais_hybrid'"
+                    style="width: 250px !important; height: 250px !important;">
+
+            </div>
+            <div>
+                <img id="image" class="img-fluid "
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKulJ--uWZhzzHTIGUpginbJR_htUDyU17LfHmSgdBkO8HZ6h6xyW13in33ivZGJU17I&usqp=CAU"
+                    alt="img"
+                    onmouseover="src='https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_S.jpg'"
+                    onmouseout="src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKulJ--uWZhzzHTIGUpginbJR_htUDyU17LfHmSgdBkO8HZ6h6xyW13in33ivZGJU17I&usqp=CAU'"
+                    style="width: 250px !important; height: 250px !important;">
+
+            </div>
+        </div>
+
+
+
+        <br><br> 5. Show a counter in browser. Counter should increase on click on increase
+        <br> button and decrease on click on decrease button. And show updated counter
+        <br> value in browser.
+
+        <div>
+            <div class="row text-center mt-5 mb-5">
+                <div class="col">
+                    <button class="btn btn-warning m-2 mx-lg-3 mx-md-3  px-lg-3 px-md-3 text-dark "
+                        onclick="increase()">Increase</button>
+                    <button class="btn btn-warning m-2 mx-lg-3 mx-md-3  px-lg-3 px-md-3 text-dark fw-bold"
+                        id="counter">0 </button>
+                    <button class="btn btn-warning m-2 mx-lg-3 mx-md-3  px-lg-3 px-md-3 text-dark "
+                        onclick="decrease()">Decrease</button>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br>
+        <h1 class="mx-auto mt-5 text-center fw-bold">JavaScript Practice Sheet # Chapter 49-52</h1>
+
+        <br><br> 1. Create a signup form and display form data in your web
+        <br> page on submission.
+        <br><br><br>
+
+        <div>
+            <div class="wrapper">
+                <div class="title-text">
+                    <div class="title login">Login Form</div>
+                    <div class="title signup">Signup Form</div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls"> <input type="radio" name="slide" id="login" checked> <input
+                            type="radio" name="slide" id="signup"> <label for="login" class="slide login">Login</label>
+                        <label for="signup" class="slide signup">Signup</label>
+                        <div class="slide-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <form onsubmit="displayFormData(event)" class="login">
+                            <div class="field"> <input type="text" name="username" id="username" placeholder="User name"
+                                    required> </div>
+                            <div class="field"> <input type="text" name="email" id="email" placeholder="Email Address"
+                                    required> </div>
+                            <div class="field"> <input type="password" name="password" id="password"
+                                    placeholder="Password" required> </div>
+                            <div class="pass-link"> <a href="#">Forgot Password</a> </div>
+                            <div class="field"> <input type="submit" value="Login"> </div>
+                            <div class="signup-link">Not a member?<br> <a href="#">Signup Now</a> </div>
+                        </form>
+                        <form onsubmit="displayFormData(event)" class="signup">
+                            <div class="field"> <input type="text" name="email" id="emailSignup"
+                                    placeholder="Email Address" required> </div>
+                            <div class="field"> <input type="password" name="password" id="passwordSignup"
+                                    placeholder="Password" required> </div>
+                            <div class="field"> <input type="password" name="confirm_password"
+                                    id="confirmPasswordSignup" placeholder="Confirm Password" required> </div>
+                            <div class="field"> <input type="submit" value="Signup"> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="displayData" class="mt-4">
+            <h2>Form Data Submitted:</h2>
+            <p id="displayUsername"></p>
+            <p id="displayEmail"></p>
+            <p id="displayPassword"></p>
+            <!-- <p id="displayConfirmPassword"></p> -->
+        </div>
+
+
+
+        <div class="mt-5">
+            <br><br> 2. Suppose in your webpage there is content area in which
+            <br> you have entered your item details, but user can only see
+            <br>some details on first look. When user clicks on “Read
+            <br>more” button, full detail of that particular item will be
+            <br>displayed.
+        </div>
+        <div class="text-center mt-5 pt-5" href="JavaScript:void(0)">
+
+            <div class="d-flex justify-content-center align-item-center flex-lg-row flex-md-row   flex-column">
+
+
+                <div class="mt-3 m-lg-5 m-md-4 mx-auto text-center" style="width: 300px;">
+                    <img src="./assets/dis.jpg" alt="img" style="width: 350px !important; height: 300px !important;"
+                        class="img-fluid mx-auto">
+                    <div class="card mx-auto">
+                        <div class="card">
+                            <span class="card-title fw-bold pt-3 pb-2" style="text-transform: uppercase;">Disney
+                                Family</span>
+                            <div class="card-link">
+                                <p class="card-text hide" id="hidetext">
+                                    Lorem ipsum dolor oriosam? Recusandae, nulla.
+                                </p>
+                                <p>Lorem Ipsum is simply dummy text dard dummy text ever since the 1500s. </p>
+                                <button class="btn btn-lg btn-success  mb-4">
+                                    <a href="JavaScript:void(0)" title="Read Full" class="text-light" id="button"
+                                        onclick="toggle()">Read Full</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-3 m-lg-5 m-md-4 mx-auto text-center" style="width: 300px;">
+                    <div class="text-center">
+                        <img src="./assets/goko2.png" alt="img"
+                            style="width: 350px !important; height: 300px !important;" class="img-fluid mx-auto">
+                        <div class="card mx-auto">
+                            <div class="card">
+                                <span class="card-title fw-bold pt-3 pb-2">SOFIA THE FIRST</span>
+                                <div class="card-link">
+                                    <p class="card-text hide2" id="hidetext2">
+                                        Lorem ipsum dolor sit amet, cons Lorem, ipsum dolor.
+                                    </p>
+                                    <p>Lorem Ipsum is simply dummy text dard dummy text ever since the 1500s. </p>
+                                    <button class="btn btn-lg btn-success  mb-4">
+                                        <a href="JavaScript:void(0)" title="Read Full" class="text-light" id="button2"
+                                            onclick="toggle2()">Read Full</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="mt-3 m-lg-5 m-md-4 mx-auto text-center" style="width: 300px;">
+                    <div class="text-center">
+                        <img src="./assets/dor.png" alt="img" style="width: 350px !important; height: 300px !important;"
+                            class="img-fluid mx-auto">
+                        <div class="card mx-auto">
+                            <div class="card">
+                                <span class="card-title fw-bold pt-3 pb-2">POKEMON</span>
+                                <div class="card-link">
+                                    <p class="card-text hide3" id="hidetext3">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis officiis,
+                                        fugiat illum .
+                                    </p>
+                                    <p>Lorem Ipsum is simply dummy text dard dummy text ever since the 1500s. </p>
+                                    <button class="btn btn-lg btn-success  mb-4">
+                                        <a href="JavaScript:void(0)" title="Read Full" class="text-light" id="button3"
+                                            onclick="toggle3()">Read Full</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mt-5">
+
+            <br><br>3. In previous assignment you have created a tabular data
+            <br>using javascript. Let's modify that. Create a form which
+            <br>takes student's details and show each student detail in table
+            <br><br> Each row of table must contain a delete button and
+            <br>an edit button. On click on delete button entire row should
+            <br>be deleted. On click on edit button, a hidden form will
+            <br>appear with the values of that row.
+        </div>
+
+        <div class="container-xxl justify-content-center text-center align-item-center  m-1">
+            <div class="m-3">
+                <div class="row border rounded mt-5 pt-2 d-flex flex-lg-row flex-md-row ">
+                    <div class="col mt-1 mb-3"><b>Index</b></div>
+                    <div class="col mt-1 mb-3"><b>Names</b></div>
+                    <div class="col mt-1 mb-3"><b>Class</b></div>
+                    <div class="col mt-1 mb-3"><b>Buttons</b></div>
+                </div>
+
+                <div class="row mt-1 d-flex flex-lg-row flex-md-row  m-lg-3" id="row5">
+                    <div class="col text-center">
+                        <p id="editnum">0</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editName">Jhone</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editclass">10</p>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-0 p-0 px-1 text-light" onclick="editRow('row5')">Edit</button>
+                        <button class="btn btn-danger m-0 p-0 px-1 text-light"
+                            onclick="deleteRow('row5')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="row mt-1 d-flex flex-lg-row flex-md-row  m-lg-3" id="row6">
+                    <div class="col text-center">
+                        <p id="editnum">1</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editName">Doe</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editclass">9</p>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-0 p-0 px-1 text-light" onclick="editRow('row6')">Edit</button>
+                        <button class="btn btn-danger  m-0 p-0 px-1 text-light"
+                            onclick="deleteRow('row6')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="row mt-1 d-flex flex-lg-row flex-md-row  m-lg-3" id="row7">
+                    <div class="col text-center">
+                        <p id="editnum">2</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editName">Mark</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editclass">10</p>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-0 p-0 px-1  text-light" onclick="editRow('row7')">Edit</button>
+                        <button class="btn btn-danger m-0 p-0 px-1 text-light"
+                            onclick="deleteRow('row7')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="row mt-1 d-flex flex-lg-row flex-md-row  m-lg-3" id="row8">
+                    <div class="col text-center">
+                        <p id="editnum">3</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editName">James</p>
+                    </div>
+                    <div class="col text-center">
+                        <p id="editclass">8</p>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-dark m-0 p-0 px-1 text-light" onclick="editRow('row8')">Edit</button>
+                        <button class="btn btn-danger m-0 p-0 px-1 text-light"
+                            onclick="deleteRow('row8')">Delete</button>
+                    </div>
+                </div>
+
+                <div id="rowsContainer ">
+                    <!-- Additional rows can be added here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-form m-lg-5 m-2" id="editForm">
+            <h3>Edit Row</h3>
+            <form onsubmit="updateRow(event)">
+                <div class="mb-3">
+                    <label for="editNameInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="editNameInput" required>
+                </div>
+                <div class="mb-3">
+                    <label for="editClassInput" class="form-label">Class</label>
+                    <input type="text" class="form-control" id="editClassInput" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-secondary" onclick="hideEditForm()">Cancel</button>
+            </form>
+        </div>
+
+        <hr>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="text-center mb-5">
+        <button class="mx-auto btn btn-success justify-content-center align-item-center text-center  p-2 rounded-2"><a
+                href="./script.html" target="_blank" class="text-decoration-none text-light">Click
+                me if you want to see code..</a></button>
+
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+    <hr>
+    <h5 class="mx-auto text-center p-0 fw-bold">Created By: Ma'am Ruhama Gull <br> Solved By: Student Bushra Jan
+    </h5>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
